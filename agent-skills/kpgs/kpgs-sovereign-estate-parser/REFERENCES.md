@@ -1,0 +1,21 @@
+# References
+
+- https://github.com/RobynAwesome/Introduction-to-MCP
+- https://github.com/RobynAwesome/Skills
+- https://github.com/RobynAwesome/Kopano-Labs-Website
+- https://github.com/RobynAwesome/Bookit-5s-Arena
+- https://github.com/RobynAwesome/5s-Arena-Blog
+- https://github.com/RobynAwesome/Project-Jennifer
+- https://github.com/RobynAwesome/KasiLink
+- https://github.com/RobynAwesome/crisis-connect
+- https://github.com/RobynAwesome/starfall-salvage
+- https://kopanolabs.com/
+- https://kopanolabs.com/FOC/
+- https://kopanolabs.com/validation.json
+- https://kopanolabs.com/projects.json
+- https://FivesArena.com/
+- https://blog.FivesArena.com/
+- https://KasiLink.com/
+- https://crisisconnect.kopanolabs.com/
+- https://starfallsalvage.kopanolabs.com/
+- https://KRRababalela.com/

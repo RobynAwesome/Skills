@@ -1,0 +1,81 @@
+{
+  "schema": "kopano.kpgs.domain-bindings.v1",
+  "renterAssertion": "I_AM_STATELESS_RENTER_NOT_LANDLORD",
+  "bindings": [
+    {
+      "host": "fivesarena.com",
+      "lane": "operational",
+      "skillFamily": "fivesarena",
+      "authority": "https://FivesArena.com",
+      "repoOwner": "RobynAwesome",
+      "routes": [
+        { "prefix": "/bookings", "skill": "fivesarena-bookings", "authority": "https://FivesArena.com/bookings" },
+        { "prefix": "/tournament", "skill": "fivesarena-tournament", "authority": "https://FivesArena.com/tournament" },
+        { "prefix": "/fixtures", "skill": "fivesarena-fixtures", "authority": "https://FivesArena.com/fixtures" },
+        { "prefix": "/leagues", "skill": "fivesarena-leagues", "authority": "https://FivesArena.com/leagues" },
+        { "prefix": "/pricing", "skill": "fivesarena-pricing", "authority": "https://FivesArena.com/pricing" },
+        { "prefix": "/events-and-services", "skill": "fivesarena-events-services", "authority": "https://FivesArena.com/events-and-services" }
+      ]
+    },
+    {
+      "host": "blog.fivesarena.com",
+      "lane": "editorial",
+      "skillFamily": "fivesarena-blog",
+      "authority": "https://blog.FivesArena.com",
+      "repoOwner": "RobynAwesome",
+      "operationalAuthority": "https://FivesArena.com",
+      "routes": [
+        { "prefix": "/fixtures", "skill": "fivesarena-blog-fixtures", "authority": "https://blog.FivesArena.com/fixtures" },
+        { "prefix": "/tactics", "skill": "fivesarena-blog-tactics", "authority": "https://blog.FivesArena.com/tactics" },
+        { "prefix": "/creator", "skill": "fivesarena-blog-creator", "authority": "https://blog.FivesArena.com/creator" }
+      ]
+    },
+    {
+      "host": "kopanolabs.com",
+      "lane": "corporate",
+      "skillFamily": "kpgs-sovereign-estate-parser",
+      "authority": "https://kopanolabs.com/validation.json",
+      "repoOwner": "RobynAwesome",
+      "routes": [
+        { "prefix": "/FOC/", "skill": "kpgs-sovereign-estate-parser", "authority": "https://kopanolabs.com/validation.json" },
+        { "prefix": "/content/", "skill": "kpgs-sovereign-estate-parser", "authority": "https://kopanolabs.com/projects.json" },
+        { "prefix": "/proof/", "skill": "kpgs-sovereign-estate-parser", "authority": "https://kopanolabs.com/validation.json" }
+      ]
+    },
+    {
+      "host": "kasilink.com",
+      "lane": "product",
+      "skillFamily": "kpgs-sovereign-estate-parser",
+      "authority": "https://KasiLink.com",
+      "repoOwner": "RobynAwesome"
+    },
+    {
+      "host": "crisisconnect.kopanolabs.com",
+      "lane": "field",
+      "skillFamily": "kpgs-sovereign-estate-parser",
+      "authority": "https://crisisconnect.kopanolabs.com",
+      "repoOwner": "RobynAwesome"
+    },
+    {
+      "host": "starfallsalvage.kopanolabs.com",
+      "lane": "product",
+      "skillFamily": "kpgs-sovereign-estate-parser",
+      "authority": "https://starfallsalvage.kopanolabs.com",
+      "repoOwner": "RobynAwesome"
+    },
+    {
+      "host": "krrababalela.com",
+      "lane": "identity",
+      "skillFamily": "kpgs-sovereign-estate-parser",
+      "authority": "https://KRRababalela.com",
+      "repoOwner": "RobynAwesome"
+    },
+    {
+      "host": "*.kopanolabs.com",
+      "lane": "product",
+      "skillFamily": "kpgs-sovereign-estate-parser",
+      "authority": "https://kopanolabs.com/projects.json",
+      "repoOwner": "RobynAwesome"
+    }
+  ]
+}

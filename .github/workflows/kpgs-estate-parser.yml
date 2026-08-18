@@ -1,0 +1,28 @@
+name: KPGS Estate Parser
+
+on:
+  pull_request:
+    paths:
+      - 'agent-skills/kpgs/kpgs-sovereign-estate-parser/**'
+      - '.github/workflows/kpgs-estate-parser.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'agent-skills/kpgs/kpgs-sovereign-estate-parser/**'
+      - '.github/workflows/kpgs-estate-parser.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Build adapter
+        run: dotnet build agent-skills/kpgs/kpgs-sovereign-estate-parser/runtime/Kopano.Sovereign.EstateAdapter/Kopano.Sovereign.EstateAdapter.csproj --configuration Release
+      - name: Run governance self-test
+        run: dotnet run --project agent-skills/kpgs/kpgs-sovereign-estate-parser/runtime/Kopano.Sovereign.EstateAdapter/Kopano.Sovereign.EstateAdapter.csproj --configuration Release --no-build -- --self-test
