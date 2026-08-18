@@ -1,0 +1,24 @@
+{
+  "url": "https://kopanolabs.com/FOC/",
+  "claimKey": "north-west-lucerne-validation",
+  "evidence": [
+    {
+      "sourceId": "kopano-validation-ledger",
+      "claim": "The North West lucerne workflow is validated in field operations.",
+      "telemetryClass": "verified-source",
+      "relationshipState": "VALIDATED_FIELD",
+      "evidenceKind": "field",
+      "url": "https://kopanolabs.com/validation.json",
+      "receipt": "validation.json#north-west-10-acre-lucerne"
+    },
+    {
+      "sourceId": "search-discovery",
+      "claim": "The North West lucerne workflow is validated in field operations.",
+      "telemetryClass": "verified-live",
+      "relationshipState": "VALIDATED_FIELD",
+      "evidenceKind": "seo",
+      "url": "https://search.google.com/",
+      "receipt": "index-observation"
+    }
+  ]
+}
